@@ -1,0 +1,12 @@
+﻿@inject ExploreCalifornia.Models.FormattingService Format
+@model ExploreCalifornia.ViewModels.PostViewModel
+
+<article class="blog-post">
+    <h1><a href="@Url.Action("Post","Blog",new {year = Model.Date.Year  , month = Model.Date.Month , key = Model.Id})">@Model.Title</a></h1>
+    <div class="details">
+        Posted <span class="blog-date">@Format.AsReadableDate(Model.Date)</span> by <span>@Model.AuthorName</span>
+    </div>
+    <div class="content">
+        @Model.Content
+    </div>
+</article>

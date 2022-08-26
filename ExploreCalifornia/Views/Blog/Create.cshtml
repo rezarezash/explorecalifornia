@@ -1,0 +1,26 @@
+﻿@model ExploreCalifornia.ViewModels.PostViewModel
+
+<fieldset>
+    <form asp-action="Create" asp-controller="Blog" method="post">   
+        @Html.ValidationSummary()
+        <p>
+            <label asp-for="Title" ></label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title"></span>
+        </p>
+        <p>
+            <label asp-for="Content"></label>
+            <textarea asp-for="Content" class="form-control"></textarea>
+            <span asp-validation-for="Content"></span>
+        </p>
+        <p>          
+            <label asp-for="AuthorName"></label>
+            <input asp-for="AuthorName" class="form-control" />
+            <span asp-validation-for="AuthorName"></span>
+        </p>
+        <p>@Html.LabelFor(p=>p.AuthorName) 
+            @Html.EditorFor(p=>p.Date)</p>
+        <p> <input type="submit" value="Save" /></p>
+        </form>
+    
+</fieldset>

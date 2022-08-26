@@ -1,0 +1,16 @@
+﻿@model ExploreCalifornia.ViewModels.UserLoginViewModel
+
+<form asp-action="Login" method="Post" asp-controller="Account">
+    @Html.ValidationSummary()
+    <fieldset>
+        <legend>Login</legend>
+        <label asp-for="UserName"> </label>
+        <input asp-for="UserName" class="form-control" placeholder="Enter User name" />
+
+        <label asp-for="Password"> </label>
+        <input asp-for="Password" class="form-control" placeholder="Enter password" />
+
+        <button type="submit">login</button>
+    </fieldset>
+
+</form>

@@ -1,0 +1,25 @@
+﻿@model ExploreCalifornia.ViewModels.RegisterViewModel
+
+<form asp-action="Register" method="Post" asp-controller="Account">
+    @Html.ValidationSummary()
+    <fieldset>
+        <legend>New User</legend>
+        <label asp-for="FirstName"> </label>
+        <input asp-for="FirstName" class="form-control" placeholder="Enter First name" />
+
+        <label asp-for="LastName"> </label>
+        <input asp-for="LastName" class="form-control" placeholder="Enter Last name" />
+
+        <label asp-for="UserName"> </label>
+        <input asp-for="UserName" class="form-control" placeholder="Enter User name" />
+
+        <label asp-for="Password"> </label>
+        <input asp-for="Password" class="form-control" placeholder="Enter password" />
+
+        <label asp-for="PasswordConfirm"> </label>
+        <input asp-for="PasswordConfirm" class="form-control" placeholder="Confirm password" />
+
+        <button type="submit" >Register</button>
+    </fieldset>
+
+</form>

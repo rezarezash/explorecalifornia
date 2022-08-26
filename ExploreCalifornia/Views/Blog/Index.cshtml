@@ -1,0 +1,17 @@
+﻿@model IEnumerable<ExploreCalifornia.ViewModels.PostViewModel>
+
+<p class="pager">
+    @if (ViewBag.HasPrevioisePage)
+    {
+        <a href="@Url.Action("Index", "Blog" , new {page = ViewBag.PrevioisePage})">Previouse</a>
+    }
+
+    @if (ViewBag.HasNextPage)
+    {
+        <a href="@Url.Action("Index", "Blog" , new {page = ViewBag.NextPage})">Next</a>
+    }
+</p>
+
+@foreach(var post in Model) {
+  @await Html.PartialAsync("_post",post)
+}   
