@@ -20,6 +20,7 @@ namespace ExploreCalifornia.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("In HomeController/ index");
             return View();
         }
 
