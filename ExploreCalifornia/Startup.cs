@@ -60,6 +60,8 @@ namespace ExploreCalifornia
 
             services.AddScoped<SignInManager<User>>();
 
+
+
             services.Configure<ConnectionStrings>(Configuration.GetSection("ConnectionStrings"));
             services.AddApplicationInsightsTelemetry(Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]);
         }
