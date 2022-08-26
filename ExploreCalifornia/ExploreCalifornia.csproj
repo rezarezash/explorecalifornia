@@ -4,9 +4,12 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
     <AspNetCoreModuleName>AspNetCoreModule</AspNetCoreModuleName>
+    <ApplicationInsightsResourceId>/subscriptions/3dd60508-dc04-4c5b-8c21-8eec42998cb8/resourceGroups/learngrp/providers/microsoft.insights/components/learnappnetcore</ApplicationInsightsResourceId>
+    <UserSecretsId>a528bbe7-3707-476a-aaa2-048d39635bad</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>  
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />  
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.17" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17">
