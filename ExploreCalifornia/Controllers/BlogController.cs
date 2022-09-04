@@ -1,7 +1,9 @@
 ﻿using ExploreCalifornia.DAL;
+using ExploreCalifornia.MiddleWares;
 using ExploreCalifornia.Models;
 using ExploreCalifornia.ViewModels;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.Extensions.Options;
@@ -14,6 +16,7 @@ namespace ExploreCalifornia.Controllers
 {
 
     [Route("blog")]
+    //[MiddlewareFilter(typeof(CompressionMiddlerWare))]
     public class BlogController : Controller
     {
         private readonly BlogDbContext _dbContext;

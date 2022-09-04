@@ -4,14 +4,18 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "VaultUri": "https://explorecaliforniavault.vault.azure.net/",
+        "AZURE_USERNAME": "sama.reza62@gmail.com"
       }
     },
     "ExploreCalifornia": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "VaultUri": "https://explorecaliforniavault.vault.azure.net/",
+        "AZURE_USERNAME": "sama.reza62@gmail.com"
       },
       "applicationUrl": "http://localhost:5000"
     }
